@@ -49,7 +49,7 @@ menu: main
 ---
 
 * **S. Wu, K. Raghavan, S. Di, Z. Chen, and F. Cappello**
-  *“DGRO: Diameter-Guided Ring Optimization for Integrated Research Infrastructure Membership,”*
+  *“DGRO: Diameter -Guided Ring Optimization for Integrated Research Infrastructure Membership,”*
   *arXiv preprint,* 2024. [Available online](https://arxiv.org/abs/2410.11142)
   <!-- *![Figure Placeholder](assets/img/dgro_arxiv.png)*
   *Figure: \[Your caption here]* -->
