@@ -6,9 +6,9 @@
             
             <img
                 {{ if .photo }}
-                src="people/{{ .photo }}"
+                 {{ $src = (print "people/" .photo) | relURL }}
                 {{ else }}
-                src="people/nophoto.svg"
+                 {{ $src = "people/nophoto.svg" | relURL }}
                 {{ end }}
                 class="card-img-top" alt="{{ .name }}" />
             <div class="card-body">
