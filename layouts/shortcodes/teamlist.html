@@ -6,9 +6,9 @@
             
             <img
                 {{ if .photo }}
-                src="/people/{{ .photo }}"
+                src="people/{{ .photo }}"
                 {{ else }}
-                src="/people/nophoto.svg"
+                src="people/nophoto.svg"
                 {{ end }}
                 class="card-img-top" alt="{{ .name }}" />
             <div class="card-body">
