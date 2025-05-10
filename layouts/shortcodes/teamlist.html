@@ -3,14 +3,13 @@
     {{ if eq  (.alumni|default false)  ($.Get "alumni") }}
     <div class="col">
         <div class="card">
-            
-            <img
-                {{ if .photo }}
-                 {{ $src = (print "people/" .photo) | relURL }}
-                {{ else }}
-                 {{ $src = "people/nophoto.svg" | relURL }}
-                {{ end }}
-                class="card-img-top" alt="{{ .name }}" />
+            {{ $src := "" }}
+            {{ if .photo }}
+             {{ $src = (print "people/" .photo) | relURL }}
+            {{ else }}
+             {{ $src = "people/nophoto.svg" | relURL }}
+            {{ end }}
+            <img src="{{ $src }}" class="card-img-top" alt="{{ .name }}" />
             <div class="card-body">
                 <h5 class="card-title">{{ .name }}{{ if .degree }}, {{ .degree}} {{ end }}</h5>
                 <div class="d-flex">
