@@ -3,9 +3,15 @@
     <div class="border text-center p-5 rounded-5">
         <img class="img-fluid" src="{{ "swarm-logo-small.png" | relURL }}">
         {{ .Content }}
-        {{ $about := .Site.GetPage "about" }}
+        <!-- {{ $about := .Site.GetPage "about" }}
         <a class="btn btn-bee-color btn-lg btn-primary px-5 rounded-pill" role="button" href="{{ $about }}">
-        Learn more&nbsp;<i class="bi-arrow-right"></i>
+        Learn more&nbsp;<i class="bi-arrow-right"></i> -->
+        {{ $about := .Site.GetPage "about.md" }}
+        <a class="btn btn-bee-color btn-lg btn-primary px-5 rounded-pill"
+          role="button"
+          href="{{ $about.RelPermalink }}">
+          Learn more&nbsp;<i class="bi-arrow-right"></i>
+        </a>
         </a>
     </div>
   </div>
